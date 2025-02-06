@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda tabela</title>
+    <style>
+        caption {
+            background-color: grey;
+            border: 1px solid black;
+            color: white;
+            font-size: 1.3em;
+            padding: 10px 0px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(0, 0, 0, 0.300);
+        }
+        th {
+            background-color: gainsboro;
+            border: 1px solid black;
+            padding: 10px 20px 10px 20px;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        TABLE
+            CAPTION
+            THEAD
+                TR TD TH
+            TBODY
+                TR TD TH
+            TFOOT
+                TR TD TR
+        TABLE
+    -->
+
+    <table>
+        <caption>Município com mais de um milhão de habitantes</caption>        
+        <thead>
+            <th scope="col">Ordem</th>
+            <th scope="col">UF</th>
+            <th scope="col">MUNICÍPIO</th>
+            <th scope="col">POPULAÇÃO EM 2016</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>SP</td>
+                <td>São Paulo</td>
+                <td>12.038.175</td>
+            </tr> 
+            <tr>
+                <td>2º</td>
+                <td>RJ</td>
+                <td>Rio de Janeiro</td>
+                <td>6.498.837</td>
+            </tr>          
+            <tr>
+                <td>3º</td>
+                <td>DF</td>
+                <td>Brasília</td>
+                <td>2.977.216</td>
+            </tr>          
+            <tr>
+                <td>4º</td>
+                <td>BA</td>
+                <td>Salvador</td>
+                <td>2.938.092</td>
+            </tr>          
+            <tr>
+                <td>5º</td>
+                <td>CE</td>
+                <td>Fortaleza</td>
+                <td>2.609.716</td>
+            </tr>          
+            <tr>
+                <td>6º</td>
+                <td>MG</td>
+                <td>Belo Horizonte</td>
+                <td>2.513.451</td>
+            </tr>          
+            <tr>
+                <td>7º</td>
+                <td>AM</td>
+                <td>Manaus</td>
+                <td>2.094.391</td>
+            </tr>          
+            <tr>
+                <td>8º</td>
+                <td>PR</td>
+                <td>Curitiba</td>
+                <td>1.893.997</td>
+            </tr>          
+            <tr>
+                <td>9º</td>
+                <td>PE</td>
+                <td>Recife</td>
+                <td>1.625.583</td>
+            </tr>          
+            <tr>
+                <td>10º</td>
+                <td>RS</td>
+                <td>Porto Alegre</td>
+                <td>1.481.019</td>
+            </tr>          
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Dados de 2016</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
